@@ -1,0 +1,94 @@
+.conteiner-healthcare {
+    width: 1273px;
+    margin-left: auto;
+	margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 142px;
+    margin-bottom: 229px;
+	.text2 {
+		@include font18;
+		margin-bottom: 37px;
+	}
+	@media (max-width: 1200px) {		
+		max-width: 60%;
+		padding: 10px;			
+	}
+	@media (max-width: 992px) {		
+		max-width: 70%;	
+		flex-direction: column;	
+		padding: 10px;
+		align-items: flex-start;
+		gap: 30px;
+		margin-bottom: 40px;
+	}
+	@media (max-width: 768px) {		
+		max-width: 80%;
+		flex-direction: column;	
+		flex-wrap: wrap;
+		padding: 10px;
+		align-items: flex-start;
+		gap: 30px;
+		margin-bottom: 40px;
+	}
+	@media (max-width: 576px) {		
+		max-width: 90%;	
+		flex-direction: column;
+		flex-wrap: wrap;
+		padding: 10px;
+		align-items: flex-start;
+		gap: 30px;
+		margin-bottom: 40px;		
+	}
+}
+.content-healthcare {
+	justify-content: center;
+	@media (max-width: 1200px) {		
+		max-width: 60%;			
+	}
+	@media (max-width: 992px) {		
+		max-width: 70%;
+	}
+	@media (max-width: 768px) {		
+		max-width: 80%;
+	}
+	@media (max-width: 576px) {		
+		max-width: 90%;	
+	}
+	
+}
+.leading {
+	width: 481px;
+    @include font_H2;
+	padding-top: 57px;
+	text-align: start;
+	&::after {
+		@include border;
+		margin-bottom: 31px;
+		margin-left: 0px;
+	}
+	@media (max-width: 1200px) {		
+		max-width: 60%;			
+	}
+	@media (max-width: 992px) {		
+		max-width: 70%;
+	}
+	@media (max-width: 768px) {		
+		max-width: 80%;
+	}
+	@media (max-width: 576px) {		
+		max-width: 90%;	
+	}
+}
+.link2 {
+	@include button;
+	background-color: inherit;
+	color: #458FF6;
+	border-width: 1.4px;
+	border-style: solid;
+	border-color: #458FF6;
+	@media (max-width: 576px) {
+		max-width: 100%;
+	}
+}
